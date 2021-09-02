@@ -4,10 +4,9 @@
 # (You should use the .split(",") function to split by "," and float() to cast to a float).
 
 week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
-
-avg_temp = 0.0
-
-for i in week_temps_f:
-    map=map(float,week_temps_f.split(","))
-    avg_temp = sum(map) / 7
-    print(avg_temp)
+t=week_temps_f.split(",")
+sum1=0
+for i in t:
+    sum1=sum1+float(i)
+    avg_temp=sum1/len(t)
+print(avg_temp)
